@@ -65,7 +65,7 @@ function Navbar() {
                 <div className="nav-loc">
                 <img src="https://www.licious.in/img/rebranding/location_icon.svg" alt="location" />
                 <select className="nav-select">
-                    <option value="bangalore">Bangalore</option>
+                    <option value="bangalore">Hyderabad</option>
                     <option value="Mumbai">Mumbai</option>
                     <option value="Delhi">Delhi</option>
                     <option value="Pune">Pune</option>
@@ -75,7 +75,7 @@ function Navbar() {
                     <option value="Rajasthan">Rajasthan</option>
                     <option value="Lucknow">Lucknow</option>
                     <option value="Agra">Agra</option>
-                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Hyderabad">Banglore</option>
                     <option value="Ahmedabad">Ahmedabad</option>
                 </select>
                 </div>
