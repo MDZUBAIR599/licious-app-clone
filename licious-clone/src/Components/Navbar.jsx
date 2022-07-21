@@ -10,7 +10,7 @@ import {useToast,Input,
     Box,WrapItem,Center,Stack,
     Drawer,useDisclosure,DrawerContent,
     DrawerCloseButton,DrawerBody,DrawerOverlay,
-    DrawerHeader,Button,DrawerFooter} from "@chakra-ui/react"
+    DrawerHeader,Button,DrawerFooter, Spacer} from "@chakra-ui/react"
 // import { CartContext } from "../context/cartcontext"
 import Header from "./Header"
 function Navbar() {
@@ -27,96 +27,29 @@ function Navbar() {
   const navigate = useNavigate();
   // console.log(cart)
   const handleCount=()=>{
-      if(count<=1){
-          return
-      }
-      setCount(count-1)
+     
   }
   const ref=useRef()
-  let subtotal=0;
-  // for(let i=0;i<cart.length;i++){
-  //     subtotal+=cart[i].price;
-  // }
+ 
   const onLoginChange=()=>{
       setLog(ref.current.value)
   }  
    
   const sendOTP=()=>{
-  var x=Math.floor(Math.random()*10000)+90000
-      setOtp(x)
-      alert(x)
-      setDis(true)
+ 
   }
   const handleOtp=()=>{
-      console.log(otp,con)
-      if(otp===Number(con)){
-          toast({
-              title: 'Account created.',
-              description: "You have successfully logged in",
-              status: 'success',
-              duration: 6000,
-              isClosable: true,
-            })
-            onLoginClose()
-      }
-      else{
-          toast({
-              title: 'Invalid',
-              description: "Otp is incorrect.",
-              status: 'error',
-              duration: 6000,
-              isClosable: true,
-            })
-            toast({
-              title: 'Enter correct otp',
-              description: `Otp is ${otp}`,
-              status: 'info',
-              duration: 6000,
-              isClosable: true,
-            })  
-
-      }
+    
       
   }
   const logOut = () => {
-      setDis(false);
-      setLog("")
-      setOtp("")
-      setCon("")
-      toast({
-          title: 'Logged out.',
-          description: "You have successfully logged out of your account",
-          status: 'success',
-          duration: 6000,
-          isClosable: true,
-        })
+     
   }
-  const handleCheckOut=()=>{
-      // if(cart.length===0){
-      //     toast({
-      //         title: 'Cart Empty.',
-      //         description: "Please add a product to proceed",
-      //         status: 'error',
-      //         duration: 6000,
-      //         isClosable: true,
-      //       })
-      // }
-      // else if(!dis){
-      //     onCartClose();
-      //     onLoginOpen();
-      // }
-      // else{
-      //     onCartClose();
-      //     navigate("/checkout")
-      // }
-  }
-  const handleRemove=(id)=>{
-    //   let update=cart.filter((item)=>item._id!==id)
-    //  setCart(update)
-  }
+
+  
+  
   return (
     <div>
-
       <div>
         <Header/>
       </div>
@@ -144,12 +77,20 @@ function Navbar() {
                 <div>
                 <AiOutlineSearch className="search-icon"></AiOutlineSearch>
                        <input className="nav-inp" type="text" placeholder="Search for any delicious product" />
+                       <Spacer/>
+                       
             
                 </div>
-                
+                <div  className="nav-categories">
+                  <img  className="nav-cat-icon"
+                     src="https://www.licious.in/img/rebranding/category-dropdown-icon.svg" alt="Categories"/>
+                     <p className="nav-p">Categories</p>
+                </div>              
+             
                 <div className="nav-log" ref={btnRef} colorscheme='teal' onClick={onLoginOpen}>
                     <img className="nav-icons profile" src="https://www.licious.in/img/rebranding/profile_icon.svg" alt="profile" />
-                    {!dis?<p className="nav-nav">Login</p>:<p onClick={()=>logOut()} className="nav-nav">Logout</p>}
+                    {!dis?<p className="nav-nav">Login</p>:<p onClick={()=>logOut()} 
+                    className="nav-nav">Logout</p>}
         <Drawer
         isOpen={isLoginOpen}
         placement='right'
@@ -164,13 +105,17 @@ function Navbar() {
           <DrawerBody className="login-body2">  
             <Input placeholder="Enter Mobile Number" ref={ref} type="number" className="login-mob" onChange={onLoginChange}></Input>
             {dis?<Input placeholder="Enter Otp" type="number" onChange={(e)=>setCon(e.target.value)}></Input>:null}
-         {dis?<Button className="login-confirm" colorScheme="Red" onClick={() =>handleOtp()}>Confirm OTP</Button>:<Button disabled={log.length<10} colorScheme="Red" className="login-otpget" onClick={()=>sendOTP()}>Proceed Via OTP</Button>}
+         {dis?<Button className="login-confirm" colorScheme="Red" onClick={() =>handleOtp()}>Confirm OTP</Button>:<Button >Proceed Via OTP</Button>}
             <p className="login-pp">By signing in you agree to our <b className="bold">terms and conditions</b></p>
           </DrawerBody>
           </DrawerBody>
         </DrawerContent>
      </Drawer>
-              
+                      
+          </div>
+           <div className="nav-cart">
+                    <img className="nav-icons" src="https://www.licious.in/img/rebranding/cart_icon.svg" alt="cart" />
+                    <p className="nav-nav">Cart</p>                  
            </div>
            </div>
            </div>
