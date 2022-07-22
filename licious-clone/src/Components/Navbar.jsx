@@ -96,7 +96,7 @@ function Navbar() {
                      <p className="nav-p">Categories</p>
                 </div>              
               </MenuButton>
-              <MenuList classname="dropdown" alignItems={"center"} bg="whitesmoke" width={"300px"} box-shadow=" rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+              <MenuList className="dropdown" alignItems={"center"} bg="whitesmoke" width={"300px"} box-shadow=" rgba(0, 0, 0, 0.24) 0px 3px 8px;">
                 <MenuItem className="cat-img"> 
                 <div  className="cat-img">
                 <Link to="/mutton">

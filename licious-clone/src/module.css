@@ -263,6 +263,7 @@
     
     }
     .discover-main{
+        padding: 10px;
         width: 70%;
         margin: auto;
     }
@@ -274,9 +275,7 @@
         padding-bottom:17px;
         padding-left:20px;
         padding-right:20px;
-        margin-bottom:40px;
-
-        
+        margin-bottom:40px;        
     }
     .disc-2{
         position:absolute;
@@ -317,4 +316,75 @@
         border-radius:5px; 
         padding: 10px 20px 10px 20px;
         background-color:white;
+    }
+    .cash-img{
+        margin-top:10px;
+        margin:auto;
+    }
+    .reward-main{
+        display: flex;
+        justify-content:space-between;
+        width:50%;
+        background-color:rgb(254,233,236);
+        margin:auto;
+        padding:5px;
+        height:90px;
+        font-size:15px;
+        margin-top:10px;
+    }
+    .reward-div{
+        display: flex;
+    }
+    .reward-btn{
+        border:none;
+        color:rgb(209,18,67);
+        margin-top:30px;
+    }
+    .reward-left{
+        text-align:left
+    }
+    .reward-img{
+        width:50px;
+        height:50px;
+        margin-top:20px;
+    }
+    .empty-img{
+        width:1150px;
+        height:400px;
+        margin-bottom: 100px;
+        margin-top:10px;
+        margin:auto;
+    }
+    .blog-title{
+        font-weight:bold;
+    }
+    .blog-main{
+    width:1130px;
+    margin:auto;
+    }
+    .blog-head{
+        display: flex;
+        justify-content: space-between;
+    }
+    .blog-content{
+        display: flex;
+        text-align:left;
+        flex:10px;
+    }
+    .blog-img{
+        width: 370px;
+        height: 370px;
+        border-radius:7px;
+    }
+    .blog-box{
+        width:370px;
+        margin: 10px;
+        border-radius:7px;
+        margin-left: 0px;
+    
+    }
+    .adv-img{
+        width:1130px;
+        height:470px;
+        margin:auto;
     }
