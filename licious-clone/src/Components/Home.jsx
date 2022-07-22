@@ -3,6 +3,10 @@ import { Discover } from './Discover'
 import Banner from './Banner'
 import { Join } from './Join'
 import Shopcategory from './Shopcategory'
+import Bestsellers from './Bestsellers'
+import Reward from './Reward'
+import Blog from '../Blog'
+import { Adv } from './Adv'
 
 
 function Home() {
@@ -12,6 +16,10 @@ function Home() {
       <Shopcategory/>
       <Join/>
       <Discover/>
+      <Reward/>
+      {/* <Bestsellers/> */}
+      <Blog/>
+      <Adv/>
     </div>
   )
 }
