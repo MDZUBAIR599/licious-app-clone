@@ -1,5 +1,6 @@
 {
-    "Bestseller":[{
+    "Bestseller":[
+        {
         "id":1,
         "image":"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/ca5adea0-fcd4-9787-416a-7b95b3a670b4/original/ChickenLC.jpg?format=webp" ,
                  "name":"Chicken Curry Cut (Large Pcs)",
@@ -184,5 +185,5 @@
         "markprice":205 ,
         "off": "20%OFF"
     }
-]
+ ]
 }
