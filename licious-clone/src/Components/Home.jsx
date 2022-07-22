@@ -5,8 +5,11 @@ import { Join } from './Join'
 import Shopcategory from './Shopcategory'
 import Bestsellers from './Bestsellers'
 import Reward from './Reward'
-import Blog from '../Blog'
+import Blog from './Blog'
 import { Adv } from './Adv'
+import { News } from './News'
+import { Footer } from './Footer'
+
 
 
 function Home() {
@@ -17,9 +20,11 @@ function Home() {
       <Join/>
       <Discover/>
       <Reward/>
-      {/* <Bestsellers/> */}
+      <Bestsellers/>
       <Blog/>
       <Adv/>
+      <News/>
+      <Footer/>
     </div>
   )
 }
