@@ -7,6 +7,7 @@ import Bestsellers from './Bestsellers'
 import Reward from './Reward'
 import Blog from '../Blog'
 import { Adv } from './Adv'
+import { News } from './News'
 
 
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
       <Bestsellers/>
       <Blog/>
       <Adv/>
+      <News/>
     </div>
   )
 }
