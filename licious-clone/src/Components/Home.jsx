@@ -17,7 +17,7 @@ function Home() {
       <Join/>
       <Discover/>
       <Reward/>
-      {/* <Bestsellers/> */}
+      <Bestsellers/>
       <Blog/>
       <Adv/>
     </div>
