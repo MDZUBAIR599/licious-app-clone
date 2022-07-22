@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
    return (
      <div  className="category-main">
        <Box   className="cat-category">
-       <Heading id="shop-cat">Explore by categorys</Heading>
+       <Heading id="shop-cat">Shop by categories</Heading>
             <p id="freshest">Freshest meats just for you</p>
        </Box>
        <Box className="top-bar">
