@@ -416,11 +416,193 @@
         padding-bottom:30px;
         background-color: white;
         border-radius: 5px;
+        
     }
     .news-head{
-        width:200px;
+        width:100px;
      
     }
     .news-second{
         margin-right: 15px;
     }
+    .items-div{        
+        display: grid;
+        overflow-x: scroll;
+        display: flex;      
+        height: 400px;
+        text-align:left;
+        font-size:13px;
+        width: 85%;margin: auto;
+        padding: 7px;
+         gap: 10px;       
+        }
+        .chick-box{ 
+            
+            height:390px;
+            /* line-height:32px; */
+            border-radius:8px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        
+        }
+       .chick-img{
+            width: 320px;
+            height:166px; 
+            border-radius:8px 8px 0px 0px;
+        }
+        .chick-head{
+            font-weight:bold;
+            padding:0px 8px 0px 8px; 
+        }
+       .chick-wt,.chick-pr,.chick-dl{
+            display :flex;
+            padding:0px 10px 0px 10px;
+        } 
+        .chick-btn{
+            background-color:rgb(209,18,67);
+            color:white;
+            border:none;
+            border-radius:8px;
+            font-size:13px;
+            font-weight:bold;
+            padding:0px 7px 0px 7px;
+        }
+        .chick-pr{
+            justify-content:space-between;
+            margin-bottom:5px;
+        }
+        .chick-wt{
+            width:60%;
+            justify-content:space-between;
+        }
+       
+        .chick-dl{
+            justify-content:center;
+            border-top:1px solid rgba(128, 128, 128, 0.214);
+            color: rgba(128, 128, 128, 0.696);
+        } 
+        .extra-head{
+             width: 200px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;  
+        }
+        .extra-chick{
+            color: rgba(128, 128, 128, 0.696);
+        }
+        .chick-mrp{
+        color:rgb(209,18,67);
+        }
+        .f-inner{
+            display:flex;
+        }
+        .footer-main{
+            width:1130px;
+            margin:auto;
+            text-align:left;
+            margin-top:20px;
+        }
+        .f-first{
+            display: flex;
+        }
+        .f-last{
+            text-align:center;
+        }
+        .f-flex{
+            display: flex;
+        }
+        .f-title{
+            display: flex;
+        }
+        .f-touch{
+            display: flex;
+        }
+        .f-hr{
+            width:1130px;
+            margin-top: 10px;
+        }
+        .footer-h1{
+            font-weight:bold;
+        }
+        .footer-p{
+            font-size:14px;
+        }
+        .footer-part1{
+            border-right:1px solid rgba(128, 128, 128, 0.195);
+            padding-right:10px;
+        }
+        .footer-img{
+            width:120px;
+            margin-bottom: 10px;
+        }
+        .f-inner{
+            padding-right:10px;
+        }
+        .footer-part2{
+            padding-right:10px;
+        }
+        .footer-main{
+            color:rgb(85, 83, 83);
+        }
+        .f-touch{
+        margin-left: 70px;;
+        }
+        .f-keep{
+            margin-right:30px;
+        }
+        .footer-icon{
+            font-size:26px;
+            margin-right: 10px;
+        }
+        .icon1:hover{
+        color:rgb(211, 77, 20)
+        }
+        .icon2:hover{
+            color:rgb(68, 67, 163)
+        }
+        .icon3:hover{
+            color:rgb(0, 123, 255)
+        }
+        .footer-hr{
+            display: flex;
+        }
+        .foot-hr{
+            border-top: 1px solid rgb(224, 224, 224);
+            width:80%;
+            margin-top:10px;
+        }
+        .footer-para{
+            font-size:15px;
+            line-height:20px;
+        }
+        .mar{
+            margin-top:10px;
+        }
+        .footer-cities{
+            font-size:13px;
+        }
+        .f-flex{
+            font-weight:bold;
+            justify-content:space-between;
+            font-size:14px;
+            width:35%;
+            margin: auto;
+        }
+        .f-last{
+            text-align:center;
+            font-size:13px;
+        }
+        .f-img{
+            width:15px;
+            height:15px;
+            margin-top:3px;
+        }
+        .f-2020{
+            font-weight:400
+        }
+       
+        
+        
+        
+        
+        
+        
