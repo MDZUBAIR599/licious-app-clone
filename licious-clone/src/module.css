@@ -1,49 +1,46 @@
-.navbar-1,.navbar-2,.navbar-0{
+ .header-1,.header-2,.header-0{
     display:flex;
     height:20px;
     padding-bottom: 19px;
     gap: 10px;
     }
-    .navbar-0{
+    .header-0{
         justify-content:space-evenly;
         height:25px;
-        background-color:whitesmoke
+        background-color:whitesmoke;
 
         
     }
-    .nav-p{
+    .header-p{
         font-size:14px;
-        color: rgb(100, 97, 97);
+        color: rgb(78, 74, 74);
         cursor: pointer;
     }
+      
+      @media screen and (min-width: 880PX) {
+        .header-0 {
+          width: 100%;
+        }
+      }
+
     .nav-i{
         padding-top:1px;
         cursor: pointer;
     }
-    /* .navbar-1{
-        width:16%;
-        justify-content:space-between;
-    
-        display: flex;
-    }
-    .navbar-2{
-        width:30%;
-        justify-content:space-between;
-    } */
-    .nav-img{
+   .nav-img{
         margin-top:1px;
         width:17px;
         height:17px;
         cursor: pointer;
     }
-
     .main-cont{
         width: 100%;
         padding:10px;
+        justify-content: center;
         box-shadow: rgb(204, 219, 232) 0px -2px 6px 0px inset, rgba(255, 255, 255, 0.5) 0px 0px 0px 0px inset;
     }
     .container {
-        width: 85%;
+        width: 90%;   
         margin: auto;
         display: flex;
         padding-top:15px;
@@ -52,20 +49,8 @@
         justify-content:space-evenly;
        
       }
-       
-      /* @media screen and (min-width: 900px) {
-        .container {
-          width: 70%;
-        }
-      }
-      
-      @media screen and (min-width: 560px) {
-        .container {
-          width:100%;
-        }
-      }  */
 
-    #freshest{
+     #freshest{
       color:rgba(128, 128, 128, 0.658);
       font-size:14px;
     }
@@ -83,8 +68,6 @@
         height:30px;
         background-color: whitesmoke;
         border:none
-
-        /* margin-top: 1px; */
       
     }
     .search-icon{
@@ -116,8 +99,8 @@
     }
     .nav-log{
         display: flex;
-        font-size:12px;
-        margin-right: 9px;
+        font-size:14px;
+        margin-right: 11px;
     }
     .nav-cat-icon{
         height: 22px;
@@ -136,10 +119,10 @@
         border-radius: 5px;
         display:flex;
         align-items: center;
-        font-size:14px;
+        font-size:18px;
         width: 100px;
-        height: 48px;
-        margin-left: -0px;
+        height: 55px;
+        margin-left: 9px;
     }
 
     .nav-icons{
@@ -396,20 +379,20 @@
     }
     .news-h2{
         margin-left: 190px;
-    font-weight: bold;
+      font-weight: bold;
     }
     .news-div{
         display: flex;
         gap: 10px;
         overflow-x: scroll;
-        width: 100%;
+        width: 80%;
         margin-right: 10px;
         background-color:white;
         text-align:left;
         margin:auto;
     }
     .news-img{
-        width:200px;
+        
         height:130px;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
         padding-top:30px;
@@ -427,71 +410,143 @@
     }
     .items-div{        
         display: grid;
-        overflow-x: scroll;
+        overflow-y: scroll;
         display: flex;      
-        height: 400px;
+        height: 405px;
         text-align:left;
         font-size:13px;
-        width: 85%;margin: auto;
+        width: 80%;margin: auto;
         padding: 7px;
-         gap: 10px;       
+         gap: 17px;       
         }
-        .chick-box{ 
+        .seller-box{ 
             
-            height:390px;
-            /* line-height:32px; */
+            height:373px;
+           
             border-radius:8px;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         
         }
-       .chick-img{
-            width: 320px;
-            height:166px; 
+       .seller-img{
+            width: 380px;
+            height:256px; 
             border-radius:8px 8px 0px 0px;
         }
-        .chick-head{
+        .seller-head{
             font-weight:bold;
-            padding:0px 8px 0px 8px; 
+            padding:0px 10px 0px 10px; 
         }
-       .chick-wt,.chick-pr,.chick-dl{
+       .seller-wt,.seller-pr,.seller-dl{
             display :flex;
             padding:0px 10px 0px 10px;
         } 
-        .chick-btn{
+        .seller-btn{
             background-color:rgb(209,18,67);
             color:white;
             border:none;
             border-radius:8px;
             font-size:13px;
             font-weight:bold;
-            padding:0px 7px 0px 7px;
+            padding:5px 7px 5px 7px;
         }
-        .chick-pr{
+        .seller-pr{
             justify-content:space-between;
             margin-bottom:5px;
         }
-        .chick-wt{
+        .seller-wt{
             width:60%;
             justify-content:space-between;
         }
        
-        .chick-dl{
+        .seller-dl{
             justify-content:center;
             border-top:1px solid rgba(128, 128, 128, 0.214);
             color: rgba(128, 128, 128, 0.696);
         } 
-        .extra-head{
-             width: 200px;
+        .seller-head{
+             width: 360px;
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;  
         }
-        .extra-chick{
+        .seller-chick{
             color: rgba(128, 128, 128, 0.696);
         }
-        .chick-mrp{
+        .seller-mrp{
         color:rgb(209,18,67);
         }
+
+
+
+
+        .chick-div{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            text-align:left;
+            font-size:13px;
+            grid-gap:20px;
+            width:1130px; 
+            margin-left:182px;
+            
+            }
+            .chick-wt,.chick-pr,.chick-dl{
+                display :flex;
+                padding:0px 10px 0px 10px;
+            }
+            .chick-wt{
+                width:60%;
+                justify-content:space-between;
+            }
+            .chick-pr{
+                justify-content:space-between;
+                margin-bottom:5px;
+            }
+            .chick-dl{
+                justify-content:center;
+                border-top:1px solid rgba(128, 128, 128, 0.214);
+                color: rgba(128, 128, 128, 0.696);
+            }
+            .chick-box{
+                width: 370px;
+                height:416px;
+                line-height:32px;
+                border-radius:8px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            
+            }
+            .chick-img{
+                width: 370px;
+                height:246px; 
+                border-radius:8px 8px 0px 0px;
+            }
+            .chick-head{
+                font-weight:bold;
+                padding:0px 10px 0px 10px; 
+            }
+            .extra-head{
+                width: 350px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap; 
+            }
+            .extra-chick{
+                color: rgba(128, 128, 128, 0.696);
+            }
+            .chick-mrp{
+            color:rgb(209,18,67);
+            }
+            .chick-btn{
+                background-color:rgb(209,18,67);
+                color:white;
+                border:none;
+                border-radius:8px;
+                font-size:13px;
+                font-weight:bold;
+                padding:0px 7px 0px 7px;
+            }
+
+
+
         .f-inner{
             display:flex;
         }
@@ -599,10 +654,410 @@
         .f-2020{
             font-weight:400
         }
-       
+        .login-body{
+            width: 50%;
+            margin-left: 60%;
+            background-image: url("https://indifoodbev.com/wp-content/uploads/2019/12/Drumsticks-750x750.jpg");
+            background-repeat: no-repeat;
+            background-size:cover
+        }
+        .login-body2{
+            background-color: white;
+            height:450px;
+            margin-top: 260px;
+            border-radius:7px;
+        }
+        .login-otpget{
+            background-color:rgb(209,18,67);
+            color:white;
+            width:100%;
+        }
+        .login-confirm{
+            color:white;
+            width:100%;
+            margin-top:10px ;
+           background-color:rgb(209,18,67);
+        }
+        .login-mob{
+            margin-top:20px;
+            margin-bottom: 20px;
+        }
+        .bold{
+            color:rgb(209,18,67);
+        }
+        .login-pp{
+            font-size:12px;
+        }.cart-item{
+            color:black;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+             margin-top: 15px;
+             margin-bottom: 15px;
+             padding:10px;
         
-        
-        
-        
-        
-        
+        }
+        .cartdrawer{
+            background-color: white;
+            width: 300px;
+        }
+            .cart-box{
+                display:flex;
+                justify-content:space-between
+            }
+            .cart-boxx1{
+                display:flex;
+                
+            }
+            .cart-p1{
+                background-color: rgb(220, 237, 244);
+                padding-left:3px;
+                padding-right:3px;
+                border-radius:3px;
+                font-weight: bold;
+            }
+            .cart-p2{
+                margin-left: 10px;
+                font-weight: bold;
+            }
+            .cart-box2{
+                display:flex;
+            }
+            .cart-p3{
+                border:1px solid black;
+                border-radius:4px;
+                margin-right: 10px;
+                padding-top:5px
+            }
+            .cart-p4{
+                color:rgb(209,18,67);
+                margin-top:5px;
+            }
+            .cart-box3{
+                display:flex;
+            }
+            .cart-p5{
+                margin-top: 5px;
+            }
+            .cart-box11{
+                display:flex;
+            }
+            .join-join{
+                display:flex;
+                background-color:rgb(255,220,147);
+                height:50px;
+                padding:10px;
+                border-radius:8px;
+                border:1px solid gray;
+                justify-content:space-between;
+            }
+            .join-now{
+                color:rgb(209,18,67);
+            }
+            .bill-flex{
+                display:flex;
+                justify-content:space-between;
+                font-size:12px;
+                color:rgb(148, 146, 146);
+            }
+            .bill-main{
+                border:1px dashed gray;
+                padding:24px;
+                margin-top:20px;
+            }
+            .bill-total{
+                font-size:16px;
+                font-weight:bold;
+                color:black
+            }
+            .bill-last{
+                background-color:whitesmoke;
+                width:100%;
+            }
+            .bill-b{
+                margin-right:90px;
+                margin-left:20px;
+                font-size:20px;
+            }
+            .bill-img{
+                border:1px solid blue
+            }
+            .login-body{
+                background-image: url("https://indifoodbev.com/wp-content/uploads/2019/12/Drumsticks-750x750.jpg");
+                background-repeat: no-repeat;
+                background-size:cover
+            }
+            .login-body2{
+                background-color: white;
+                height:450px;
+                margin-top: 260px;
+                border-radius:7px;
+            }
+            .login-otpget{
+                background-color:rgb(209,18,67);
+                color:white;
+                width:100%;
+            }
+            .login-confirm{
+                color:white;
+                width:100%;
+                margin-top:10px ;
+               background-color:rgb(209,18,67);
+            }
+            .login-mob{
+                margin-top:20px;
+                margin-bottom: 20px;
+            }
+            .bold{
+                color:rgb(209,18,67);
+            }
+            .login-pp{
+                font-size:12px;
+            }
+            .nav-nav{
+               
+               justify-content: center;
+               margin-top: 5px;
+               margin-left: 5px;
+               display: flex;
+            }
+
+            .nav-cart:hover{
+                color:rgb(209,18,67);
+            }
+            .extra-21{
+                margin-left: 10px;
+            }
+            .cart-para{
+                margin-top: 15px;
+                margin-bottom: 15px;
+                font-size:13px;
+            }
+            .check-btn{
+            border:1px solid rgb(209,18,67);
+            font-weight:bold;
+            font-size:29px;
+            padding:5px 150px 5px 150px;
+            border-radius:7px;
+            color:rgb(209,18,67);
+            margin-left:50px;
+            }
+            .check-h{
+                text-align: left;
+                font-weight:bold;
+                font-size:23px;
+                margin-top: 20px;
+                margin-bottom:7px;
+            }
+            .checkout-main{
+                text-align:left;
+                width:45%;
+                padding:20px;
+                margin:auto;
+                border-radius:6px;
+                margin-top:60px;
+                margin-bottom:60px;
+                box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            }
+            .check-flex{
+                display:flex;
+            }
+            .check-box{
+                border:1px solid gray;
+                color:gray;
+                padding:10px;
+                width:100%;
+                border-radius:5px;
+                margin-bottom:10px;
+                margin-left: 10px;
+            }
+            .check-flex1{
+                display:flex;
+                color:rgb(209,18,67);
+                font-weight: bold;
+                justify-content:space-between;
+            }
+            .proceed{
+                color:white;
+                background-color:rgb(209,18,67);
+                font-weight: bold;
+                font-size:19px;
+                padding:10px 30px 10px 30px;
+                border-radius:7px;
+            }
+            .payment-main{
+                display:flex;
+                text-align:left;
+                width:55%;
+                background-color:white;
+                margin:auto;
+                margin-top:60px;
+                margin-bottom:60px;
+            
+            }
+            .payment-sdiv{
+                border:1px solid rgba(154, 151, 151, 0.282);
+                width:200px;
+                font-weight: bold;
+                height:55px;
+                padding-top: 10px;
+            }
+            .payment-box{
+                font-size:12px;
+            }
+            .card-flex22{
+                display:flex;
+                margin-bottom:10px;
+            }
+            .card-head{
+                font-weight: bold;
+                font-size:20px;
+            }
+            .payment-boxs{
+                display:flex;
+            }
+            .card-num{
+                width:100%;
+                height:40px;
+                border:none;
+                border-bottom: 1px solid black;
+                margin-bottom: 30px;
+            }
+            .card-mm,.card-yy,.card-cvv{
+                height:40px;
+                margin-right: 15px;;
+                border:none;
+                width:170px;
+                border-bottom:1px solid black
+            }
+            .card-p{
+                margin-top:8px;
+                margin:10px;
+                margin-bottom:20px;
+            }
+            .card-name{
+                width:100%;
+                height:40px;
+                border:none;
+                border-bottom: 1px solid black;
+                margin-bottom:20px;
+            }
+            .card-check{
+                display:flex;
+            
+            }
+            .pay-button{
+                background-color:rgb(209,18,67);
+                padding:10px 40px 10px 40px;
+                color:white;
+                border-radius:6px;
+            }
+            .payment-sdiv2{
+                padding:20px;
+            }
+            .footer-h1{
+                font-weight:bold;
+            }
+            .footer-p{
+                font-size:14px;
+            }
+            .footer-part1{
+                border-right:1px solid rgba(128, 128, 128, 0.195);
+                padding-right:10px;
+            }
+            .footer-img{
+                width:120px;
+                margin-bottom: 10px;
+            }
+            .f-inner{
+                padding-right:10px;
+            }
+            .footer-part2{
+                padding-right:10px;
+            }
+            .footer-main{
+                color:rgb(85, 83, 83);
+            }
+            .f-touch{
+            margin-left: 70px;;
+            }
+            .f-keep{
+                margin-right:30px;
+            }
+            .footer-icon{
+                font-size:26px;
+                margin-right: 10px;
+            }
+            .icon1:hover{
+            color:rgb(211, 77, 20)
+            }
+            .icon2:hover{
+                color:rgb(68, 67, 163)
+            }
+            .icon3:hover{
+                color:rgb(0, 123, 255)
+            }
+            .footer-hr{
+                display: flex;
+            }
+            .foot-hr{
+                border-top: 1px solid rgb(224, 224, 224);
+                width:80%;
+                margin-top:10px;
+            }
+        .f-flex{
+            font-weight:bold;
+            justify-content:space-between;
+            font-size:14px;
+            width:35%;
+            margin: auto;
+        }
+        .f-last{
+            text-align:center;
+            font-size:13px;
+        }
+        .f-img{
+            width:15px;
+            height:15px;
+            margin-top:3px;
+        }
+        .f-2020{
+            font-weight:400
+        }
+        #fish-flex1{
+            display: flex;
+        }
+        #fish-flex2{
+            display: flex;
+        }
+        .fish-img{
+        width:40px;
+        height:40px;
+        }
+        #fish-flex0{
+            display: flex;
+            width:650px;
+            justify-content:space-between;
+            margin-left: 182px;
+        }
+        #fish-flex4{
+            display: flex;
+            width:580px;
+            justify-content:space-between;
+        }
+        #fish-head{
+            font-size:22px;
+            font-weight:bold;
+            padding-top: 5px;
+        }
+        #fish-fish1,#fish-fish2,#fish-fish3{
+            padding-top:10px;
+            color:rgba(128, 128, 128, 0.77);
+            font-size: 15px;
+        }
+        .icon-crumb{
+            padding-top:3px;
+            font-size:20px;
+        }
+        .breadcrumb{
+            width:150px;
+            margin-left:155px;
+        }
