@@ -7,13 +7,17 @@ import reportWebVitals from './reportWebVitals';
 import theme from "./Components/Header"
 import { ChakraProvider,  } from '@chakra-ui/react'
 import { BrowserRouter } from 'react-router-dom';
+import { CartContextProvider } from './context/Cartcontext';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
     <ChakraProvider theme={theme}>
-        <App />
+    <CartContextProvider>
+       <App />
+    </CartContextProvider>
       </ChakraProvider>
     </BrowserRouter> 
   </React.StrictMode>

@@ -2,7 +2,6 @@
 import { Box, extendTheme, Flex, Image, Spacer} from '@chakra-ui/react'
 
 import {AiFillApple} from "react-icons/ai"
-import {BiCategory} from "react-icons/bi"
 import {IoIosArrowDown} from "react-icons/io"
 import {BsDot} from "react-icons/bs"
 import React from 'react'
@@ -18,31 +17,31 @@ function Header() {
   let theme = extendTheme({ breakpoints })
   return (
     <div>
-      <Flex className="navbar-0">
+      <Flex className="header-0">
       <div>
                 </div>
-                <Box className="navbar-1">
-                    <p className="nav-p" spacing="0.25rem">Why Licious? </p>
+                <Box className="header-1">
+                    <p className="header-p" spacing="0.25rem">Why Licious? </p>
                     
                     <BsDot className="nav-i-color" color='gray'></BsDot>
-                    <p className="nav-p" spacing="0.25rem">Download App</p>
+                    <p className="header-p" spacing="0.25rem">Download App</p>
                     <AiFillApple className="nav-i" spacing="0.25rem"></AiFillApple>
                     <Spacer/>
                     
                      <img className="nav-img" src="https://www.licious.in/img/rebranding/android_app_icon.svg" alt="playstore" /> 
                    
                 </Box>
-                <Box className="navbar-2">
-                  <Box>  <p className="nav-p">FSSC 22000 Certifications</p>
+                <Box className="header-2">
+                  <Box>  <p className="header-p">FSSC 22000 Certifications</p>
                   </Box>
                   <Spacer/>
                     <BsDot className="nav-i-color"></BsDot>
                     <Spacer/>
-                    <p className="nav-p">About Us</p>
+                    <p className="header-p">About Us</p>
                     <BsDot className="nav-i-color"></BsDot>
-                    <p className="nav-p">Careers@Licious</p>
+                    <p className="header-p">Careers@Licious</p>
                     <BsDot className="nav-i-color"></BsDot>
-                    <p className="nav-p">Contact us</p>
+                    <p className="header-p">Contact us</p>
                     <IoIosArrowDown className="nav-i"></IoIosArrowDown>
                 </Box>
         </Flex>
