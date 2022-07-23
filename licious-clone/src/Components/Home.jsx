@@ -1,14 +1,16 @@
 import React from 'react'
-import { Discover } from './Discover'
 import Banner from './Banner'
-import { Join } from './Join'
-import Shopcategory from './Shopcategory'
-import Bestsellers from './Bestsellers'
 import Reward from './Reward'
-import Blog from './Blog'
-import { Adv } from './Adv'
-import { News } from './News'
-import { Footer } from './Footer'
+import Shopcategory from '../Pages/Shopcategory'
+import { Join } from '../Pages/Join'
+import { Discover } from '../Pages/Discover'
+import { News } from '../Pages/News'
+import { Adv } from '../Pages/Advetise'
+import Blog from '../Pages/Blog'
+import Bestsellers from '../Pages/Bestsellers'
+import Explorebycategory from '../Pages/Explorebycategory'
+import Rewardimage from './Rewardimage'
+
 
 
 
@@ -21,12 +23,14 @@ function Home() {
       <Discover/>
       <Reward/>
       <Bestsellers/>
+      <Rewardimage/>
+      <Explorebycategory/>
       <Blog/>
       <Adv/>
       <News/>
-      <Footer/>
+     
     </div>
   )
 }
 
-export default Home
+export default Home;

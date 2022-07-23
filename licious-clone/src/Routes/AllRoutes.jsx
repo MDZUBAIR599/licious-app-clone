@@ -1,10 +1,11 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Chicken from './Chicken'
-import Fish from './Fish'
-import Home from './Home'
-import Mutton from './Mutton'
-import ReadyToCook from './ReadyToCook'
+import Chicken from '../Pages/Chicken'
+import Fish from '../Pages/Fish'
+import Mutton from '../Pages/Mutton'
+import ReadyToCook from '../Pages/ReadyToCook'
+import Home from "../Components/Home"
+
 
 export default function AllRoutes() {
   return (
