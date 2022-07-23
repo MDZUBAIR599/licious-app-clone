@@ -11,9 +11,6 @@ import Bestsellers from '../Pages/Bestsellers'
 import Explorebycategory from '../Pages/Explorebycategory'
 import Rewardimage from './Rewardimage'
 
-
-
-
 function Home() {
   return (
     <div>
