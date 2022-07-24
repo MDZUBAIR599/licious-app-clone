@@ -32,7 +32,6 @@ function Navbar() {
   const [otp,setOtp] = useState("")
   const [con,setCon] = useState("")
   const toast = useToast()
-  const navigate = useNavigate();
   const handleCount=()=>{
       if(count<=1){
           return
