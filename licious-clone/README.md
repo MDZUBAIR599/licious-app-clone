@@ -1,6 +1,6 @@
 
 Project: Make a clone of Licious website.
-
+Deployed-link: https://csb-wq46qw.vercel.app/
 Original-Website: https://www.licious.in/
 
 
